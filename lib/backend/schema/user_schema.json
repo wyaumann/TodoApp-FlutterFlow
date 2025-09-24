@@ -1,0 +1,41 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"title": "User",
+	"description": "user data in Firestore",
+	"type": "object",
+	"properties": {
+		"birthday": {
+			"description": "user birthday",
+			"type": "string",
+			"format": "date-time"
+		},
+		"created_time": {
+			"description": "local time document was created",
+			"type": "string",
+			"format": "date-time"
+		},
+		"display_name": {
+			"description": "name displayed to other users",
+			"type": "string"
+		},
+		"email" : {
+			"description": "email address of this user",
+			"type": "string",
+			"format": "email"
+		},
+		"fav_color" : {
+			"description": "user's favorite color",
+			"type": "string"
+		},
+		"photo-url": {
+			"description": "URL for user's profile picture",
+			"type": "string",
+			"format": "url"
+		},
+		"uid": {
+			"description": "ID for this user",
+			"type": "string"
+		}
+	},
+	"required": ["created_time", "display_name", "email", "uid"]
+}
