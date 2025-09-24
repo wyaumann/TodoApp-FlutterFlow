@@ -553,7 +553,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                               .labelMedium
                                                               .fontStyle,
                                                     ),
-                                            hintText: 'Confirm Password...',
+                                            hintText: 'Confirm password...',
                                             hintStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .labelLarge
